@@ -33,6 +33,17 @@ canvas {
   .flex-center {
     @apply flex items-center justify-center;
   }
+  @media (max-width: 640px) {
+    .menuIcon {
+      @apply flex-col absolute z-[1000] w-full  bg-zinc top-[100%] translate-y-10 opacity-0;
+    }
+    .menuIcon div {
+      @apply py-2;
+    }
+    .menuIcon div:hover {
+      @apply bg-gray-300;
+    }
+  }
 
   .nav-height {
     @apply h-[calc(100vh-60px)];
